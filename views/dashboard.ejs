@@ -1,0 +1,362 @@
+<%- include('partials/header')%>
+
+
+<section id="intro">
+    <div class="intro-container text-center wow fadeInUp" data-won-delay="0.1s">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="vl_home3.png" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Amor de chocolate, o amor mais doce que existe!</h2>
+                <p>A única barra que eu queria enfrentar na minha vida, é a de chocolate.</p>
+                <a href="/prod" class="btn-get-started scrollto">Iniciar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="vl_home2.png" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Virtualate, uma explosão de sentimentos em seu paladar</h2>
+                <p>Aquele chocolate que te dá valor: Prestígio. </p>
+                <a href="/prod" class="btn-get-started scrollto">Iniciar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="vl_home4.png" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Chocolate não faz perguntas, chocolate te entende!</h2>
+                <p>Chocolate é melhor que muita gente.</p>
+                <a href="/prod" class="btn-get-started scrollto">Iniciar</a>
+              </div>
+            </div>
+          </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+  <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Preview-Produtos</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todas</li>
+              <li data-filter=".filter-barra">Barra</li>
+              <li data-filter=".filter-ovo">Ovo de Páscoa</li>
+              <li data-filter=".filter-trufa">Trufa</li>
+              <li data-filter=".filter-brownie">Brownie</li>
+              <li data-filter=".filter-bombom">Bombom</li>
+              <li data-filter=".filter-cookie">Cookie</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-barra wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="chocobar.jpeg" class="img-fluid" alt="">
+                <a href="chocobar.jpeg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="/prod?category=barra" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Barra de Chocolate</a></h4>
+                <p>Barras</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ovo wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="ovobk.jpg" class="img-fluid" alt="">
+                <a href="ovobk.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="/prod?category=ovo" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Ovo de Páscoa</a></h4>
+                <p>Ovos de páscoa</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-brownie wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="brownies.jpeg" class="img-fluid" alt="">
+                <a href="brownies.jpeg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Brownie com Cobertura</a></h4>
+                <p>Brownie</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-trufa wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="truffle.jpeg" class="img-fluid" alt="">
+                <a href="truffle.jpeg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Trufa</a></h4>
+                <p>Trufas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cookie wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="cookie.jpeg" class="img-fluid" alt="">
+                <a href="cookie.jpeg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Cookie</a></h4>
+                <p>Cookies</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-bombom wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="bombom.jpeg" class="img-fluid" alt="">
+                <a href="bombom.jpeg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Bombom</a></h4>
+                <p>Bombons</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+  <section id="about">
+    <div class="container">
+
+      <header class="section-header">
+        <h3>SOBRE A EMPRESA</h3>
+        <p>“Comece com boas pessoas, defina as regras, comunique-se, motive e recompense seus funcionários. Se você fizer todas essas coisas de forma eficaz, você não tem como errar.”</p>
+      </header>
+
+      <div class="row about-cols">
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="about-col">
+            <div class="img">
+              <img src="howdo.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            </div>
+            <h2 class="title">Nossa Missão</a></h2>
+            <p>
+              A Virtualate foi criada com o propósito de inovar o mercado de chocolates,e proporcionar aos clientes uma memorável experiência com nosso produto.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="about-col">
+            <div class="img">
+              <img src="eye.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+            </div>
+            <h2 class="title">Visão</a></h2>
+            <p>
+              A empresa pretende alcançar o nível de competição nacional em no mínimo 5 anos,com atendimento diferenciado e eficaz,com intuito de englobar um número maior de clientes.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="about-col">
+            <div class="img">
+              <img src="coracao.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-list-outline"></i></div>
+            </div>
+            <h2 class="title">Valores</a></h2>
+            <p>
+              Oferecer um ótimo serviço,preservando a ética,o respeito e a honestidade,buscando sempre inovações.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <section id="team">
+    <div class="container">
+      <div class="section-header wow fadeInUp">
+        <h3>FUNDADORES</h3>
+        <p>Conheça um pouco mais sobre a história de nossa empresa e seus fundadores</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="eu.jpeg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Diego Oliveira</h4>
+                <span>Desenvolvedor</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="member">
+            <img src="img/karol.jpeg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Karol Portella</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="member">
+            <img src="img/gabriel.jpeg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Gabriel Santos</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="member">
+            <img src="img/alifer.jpeg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Alifer Santana</h4>
+                <span>Accountant</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="member">
+            <img src="italo.jpeg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Italo </h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <p>
+        <br><br>
+     <!--<div class="section-header wow fadeInUp">
+            <h3>HISTÓRIA DA VIRTUALATE</h3>
+            <p>Conheça um pouco mais sobre a história de nossa empresa</p>
+          </div>
+          Com o ideal de revolucionar e inovar o mercado de chocolates que um grupo de amigos que eram apaixonados por bombons se inspiraram em lojas virtuais já criadas que vendiam o mais variado tipo de coisas, como utensílios, alimentos entre outros... Eles perceberam então que não tinha uma loja virtual de bombons onde você podia fazer o seu próprio bombom através de um sistema onde o cliente escolhe entre três tipos de chocolate e 10 tipos de recheio.
+          A ideia então pareceu-lhes clara: uma loja virtual onde um bombom de alta qualidade não precisa custar tanto ao consumidor, é importante que tenha sido feito com amor. Os fundadores acreditam que a loja virtual de chocolates será uma coisa grandiosa. Para quebrar o padrão desejam oferecer ao público um conceito diferente uma loja onde os clientes sejam tratados por uma empresa onde prestam um ótimo serviço, que preserva a ética, respeito, honestidade, além de sempre querer inovar.
+         
+        </p>
+    </div> !-->
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>HISTÓRIA DA VIRTUALATE</h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="" class="testimonial-img" alt="">
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Com o ideal de revolucionar e inovar o mercado de chocolates que um grupo de amigos que eram apaixonados por bombons se inspiraram em lojas virtuais já criadas que vendiam o mais variado tipo de coisas, como utensílios, alimentos entre outros... Eles perceberam então que não tinha uma loja virtual de bombons onde você podia fazer o seu próprio bombom através de um sistema onde o cliente escolhe entre três tipos de chocolate e 10 tipos de recheio.
+          A ideia então pareceu-lhes clara: uma loja virtual onde um bombom de alta qualidade não precisa custar tanto ao consumidor, é importante que tenha sido feito com amor. Os fundadores acreditam que a loja virtual de chocolates será uma coisa grandiosa. Para quebrar o padrão desejam oferecer ao público um conceito diferente uma loja onde os clientes sejam tratados por uma empresa onde prestam um ótimo serviço, que preserva a ética, respeito, honestidade, além de sempre querer inovar.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+          </div>
+        </div>
+
+  </section>
+  </section><!-- #team -->
+  </section><!-- #about -->
+
+
+  
+<%- include('partials/footer')%>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Virtualate <%= pageTitle%></title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+ 
+    <!-- Favicons -->
+  <!-- Favicons -->
+  <link href="1574967934557-1574018986010-barra.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css.map">
+  <link rel="stylesheet" href="/css/bootstrap.css.map">
+  <link rel="stylesheet" href="/css/bootstrap.min.css.map">
+  <link rel="stylesheet" href="/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.css.map">
+  <link href="/css/style.css" rel="stylesheet">
+
+  
+
+
+</head> 
+    <body>
+        <header id="header">
+            <div class="">
+        
+              <div id="logo" class="pull-left">
+                <h1><a href="/#intro" class="scrollto">VIRTUALATE</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+              </div>
+        
+              <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                  <li class="menu-active"><a href="/#intro">Início</a></li>
+                  <li><a href="/products#produc">Produtos</a></li>
+                  <li class="menu-has-children"><a href="/#about">Sobre a Empresa</a>
+                    <ul>
+                      <li><a href="/#team">Quem Somos</a></li>
+                      <li><a href="/#about">Missão,Visão e Valores</a></li>
+                    </ul>
+                    <% if(isUser) { %>
+                      <li><a href="/cart#team">Carrinho</a></li>
+                      <li><a href="/orders#team">Pedidos</a></li>
+                      <% } else { %>
+                  <li><a href="/login#team">Entrar</a></li>
+                  <li><a href="/register#team">Criar Conta</a></li>
+                  <% } %>
+                  <% if(isAdmin) { %>
+                    <li class="menu-has-children"><a href="/#about">Administrador</a>
+                      <ul>
+                        <li><a href="/admin/add">Adicionar Produto</a></li>
+                        <li><a href="/admin/orders">Gerenciar Pedidos</a></li>
+                      </ul>
+                      <% } %>
+
+                  <% if(isUser) { %>
+                    <li><a href="/logout">Sair</a></li>
+                    <% } %>  
+                  </li>
+                  <li><a href="/#footer">Contato</a></li>
+                </ul>
+              </nav><!-- #nav-menu-container -->
+            </div>
+          </header><!-- #header -->
+        
+       
+
+      
+       
+            
+        
+  
+    
+ 

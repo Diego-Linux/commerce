@@ -1,0 +1,96 @@
+<%- include('partials/header')%>
+
+<section id="intro">
+        <div class="intro-container text-center wow fadeInUp" data-won-delay="0.1s">
+          <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+    
+            <ol class="carousel-indicators"></ol>
+    
+            <div class="carousel-inner" role="listbox">
+    
+              <div class="carousel-item active">
+                <div class="carousel-background"><img src="vl_home3.png" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>Amor de chocolate, o amor mais doce que existe!</h2>
+                    <p>A única barra que eu queria enfrentar na minha vida, é a de chocolate.</p>
+                    <a href="/prod" class="btn-get-started scrollto">Iniciar</a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="carousel-background"><img src="vl_home2.png" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>Virtualate, uma explosão de sentimentos em seu paladar</h2>
+                    <p>Aquele chocolate que te dá valor: Prestígio. </p>
+                    <a href="/prod" class="btn-get-started scrollto">Iniciar</a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="carousel-background"><img src="vl_home4.png" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>Chocolate não faz perguntas,chocolate te entende!</h2>
+                    <p>Chocolate é melhor que muita gente.</p>
+                    <a href="/prod" class="btn-get-started scrollto">Iniciar</a>
+                  </div>
+                </div>
+              </div>
+    
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+    
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+    
+          </div>
+        </div>
+      </section><!-- #intro -->
+
+<section id="prodetail">
+        <section id="team">
+                <div class="container">
+                  <div class="section-header wow fadeInUp">
+                    <h3>DETALHES DO PRODUTO</h3>
+                  </div>
+<div class="container">
+    <% if(!product) { %>
+    <div class="alert alert-danger">
+        there is no product matches this id
+    </div>
+    <% } else {%>
+        <br><br><br>
+    <div class="row">
+        <div class="col col-12 col-md-6">
+            <div class="" style="width: 100%;">
+                <img src="/<%= product.image%>" class="card-img-top" style="max-height: 400px">
+                <div class="card-body">
+                    <form action="/cart" method="POST" class="add-to-cart-form">
+                        <input type="hidden" name="name" value="<%= product.name%>">
+                        <input type="hidden" name="price" value="<%= product.price%>">
+                        <input type="hidden" name="productId" value="<%= product._id%>">
+                        <input type="number" name="amount" class="form-control">
+                        <input type="submit" value="Adicionar ao carrinho" class="btn-get-started scrollto">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 col-md-6 product-detail">
+            <h3><%= product.name%></h3>
+            <h5>Preço: R$ <%= product.price%></h5>
+            <p><%= product.description%></p>
+        </div>
+    </div>
+    <% } %>
+</div>
+</section>
+
+<%- include('partials/footer')%>
